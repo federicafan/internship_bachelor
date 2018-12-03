@@ -1,0 +1,1585 @@
+Model {
+  Name			  "M2_1GDL"
+  Version		  4.0
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  Created		  "Sat Nov 16 17:11:35 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu May 22 14:51:16 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:42>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  BufferReuse		  on
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  MaxOrder		  5
+  MaxStep		  ".0001"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  ".001"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tp511068"
+    Location		    [167, 173, 1015, 568]
+    Open		    off
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    160
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "a4letter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "91"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compensatore\nloop shaping"
+      Ports		      []
+      Position		      [204, 143, 240, 182]
+      OpenFcn		      "levitatore_m1\nmod_lineare  \nloops        "
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      System {
+	Name			"Compensatore\nloop shaping"
+	Location		[433, 403, 931, 703]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Compensatore\nper validazione"
+      Ports		      []
+      Position		      [119, 143, 155, 182]
+      OpenFcn		      "comp_base"
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      System {
+	Name			"Compensatore\nper validazione"
+	Location		[433, 403, 931, 703]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      DiscreteTransferFcn
+      Name		      "Discrete\nTransfer Fcn"
+      Position		      [210, 257, 270, 293]
+      BackgroundColor	      "cyan"
+      Numerator		      "ncd"
+      Denominator	      "dcd"
+      SampleTime	      ".001"
+      Realization	      "auto"
+      Port {
+	PortNumber		1
+	Name			"Vcon"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Im"
+      Ports		      [1]
+      Position		      [585, 255, 615, 295]
+      Floating		      off
+      Location		      [5, 53, 1029, 743]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Mod 2 app"
+      Ports		      [1, 5]
+      Position		      [330, 243, 430, 307]
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      MaskPromptString	      "Mask Parameter 1:"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "off"
+      MaskVisibilityString    "off"
+      MaskToolTipString	      "on"
+      MaskDisplay	      "port_label('input',1,'Vcon')\nport_label('outpu"
+"t',1,'z')\nport_label('output',2,'Vtrasdc')\nport_label('output',3,'Im')\npor"
+"t_label('output',4,'Vtrasdp')\nport_label('output',5,'dz')\ndisp('M2')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "0"
+      Port {
+	PortNumber		4
+	Name			"Vtrasdp"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      System {
+	Name			"Mod 2 app"
+	Location		[167, 173, 979, 584]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vcon"
+	  Position		  [150, 218, 180, 232]
+	  Port			  "1"
+	  PortDimensions	  "-1"
+	  SampleTime		  "-1"
+	  DataType		  "auto"
+	  SignalType		  "auto"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Ampli PWM"
+	  Ports			  [2, 1]
+	  Position		  [380, 179, 485, 241]
+	  ShowPortLabels	  on
+	  Permissions		  "ReadWrite"
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  SimViewingDevice	  off
+	  System {
+	    Name		    "Ampli PWM"
+	    Location		    [167, 173, 979, 568]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vtrasdc"
+	      Position		      [25, 118, 55, 132]
+	      Port		      "1"
+	      PortDimensions	      "-1"
+	      SampleTime	      "-1"
+	      DataType		      "auto"
+	      SignalType	      "auto"
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vcon+Voffsetc"
+	      Position		      [25, 73, 55, 87]
+	      Port		      "2"
+	      PortDimensions	      "-1"
+	      SampleTime	      "-1"
+	      DataType		      "auto"
+	      SignalType	      "auto"
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "Compensatore\ndi corrente"
+	      Position		      [130, 57, 230, 103]
+	      Numerator		      "numfc"
+	      Denominator	      "denfc"
+	      AbsoluteTolerance	      "auto"
+	      Realization	      "auto"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      Position		      [370, 170, 430, 200]
+	      Expr		      "p_pwm(1)*u+p_pwm(2)"
+	    }
+	    Block {
+	      BlockType		      TransferFcn
+	      Name		      "GRL(s)"
+	      Position		      [515, 166, 590, 204]
+	      Numerator		      "[1]"
+	      Denominator	      "[1/16 1]"
+	      AbsoluteTolerance	      "auto"
+	      Realization	      "auto"
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Look-Up\nTable"
+	      Position		      [370, 54, 420, 106]
+	      InputValues	      "Vp_pwm"
+	      OutputValues	      "Im_pwm"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Protezione di corrente"
+	      Ports		      [1]
+	      Position		      [730, 246, 755, 284]
+	      ShowPortLabels	      on
+	      Permissions	      "ReadWrite"
+	      TreatAsAtomicUnit	      off
+	      RTWSystemCode	      "Auto"
+	      RTWFcnNameOpts	      "Auto"
+	      RTWFileNameOpts	      "Auto"
+	      SimViewingDevice	      off
+	      System {
+		Name			"Protezione di corrente"
+		Location		[167, 173, 979, 568]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Im"
+		  Position		  [30, 48, 60, 62]
+		  Port			  "1"
+		  PortDimensions	  "-1"
+		  SampleTime		  "-1"
+		  DataType		  "auto"
+		  SignalType		  "auto"
+		  Interpolate		  on
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  Position		  [145, 72, 175, 103]
+		  ShowName		  off
+		  Operator		  ">"
+		  		  
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Soglia di\ncorrente"
+		  Position		  [30, 110, 60, 140]
+		  Value			  "3"
+		  VectorParams1D	  on
+		}
+		Block {
+		  BlockType		  Stop
+		  Name			  "Stop Simulation"
+		  Position		  [220, 72, 255, 108]
+		}
+		Line {
+		  SrcBlock		  "Im"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 25]
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  DstBlock		  "Stop Simulation"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Soglia di\ncorrente"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, -30]
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturazione\n+/- 12 V"
+	      Position		      [275, 65, 305, 95]
+	      UpperLimit	      "12"
+	      LowerLimit	      "-12"
+	      LinearizeAsGain	      on
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturazione\n0-4 A"
+	      Position		      [640, 170, 670, 200]
+	      UpperLimit	      "4"
+	      LowerLimit	      "0"
+	      LinearizeAsGain	      on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [85, 70, 105, 90]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      Position		      [510, 70, 530, 90]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Im"
+	      Position		      [735, 178, 765, 192]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Look-Up\nTable"
+	      SrcPort		      1
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Compensatore\ndi corrente"
+	      SrcPort		      1
+	      DstBlock		      "Saturazione\n+/- 12 V"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vtrasdc"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Vcon+Voffsetc"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Compensatore\ndi corrente"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Saturazione\n+/- 12 V"
+	      SrcPort		      1
+	      Points		      [0, 0; 40, 0]
+	      Branch {
+		Points			[0, 105]
+		DstBlock		"Fcn"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Look-Up\nTable"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      DstBlock		      "GRL(s)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "GRL(s)"
+	      SrcPort		      1
+	      DstBlock		      "Saturazione\n0-4 A"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Saturazione\n0-4 A"
+	      SrcPort		      1
+	      Points		      [-30, 0; 50, 0]
+	      Branch {
+		DstBlock		"Im"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 80]
+		DstBlock		"Protezione di corrente"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [700, 150, 730, 180]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "ms*g"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [263, 130, 307, 160]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "Voffsetc2"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Fine corsa meccanici"
+	  Ports			  [1]
+	  Position		  [1040, 72, 1070, 108]
+	  ShowPortLabels	  on
+	  Permissions		  "ReadWrite"
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  SimViewingDevice	  off
+	  System {
+	    Name		    "Fine corsa meccanici"
+	    Location		    [167, 168, 979, 640]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "z"
+	      Position		      [115, 33, 145, 47]
+	      Port		      "1"
+	      PortDimensions	      "-1"
+	      SampleTime	      "-1"
+	      DataType		      "auto"
+	      SignalType	      "auto"
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Fine corsa 0 cm"
+	      Position		      [205, 70, 235, 100]
+	      Value		      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Fine corsa 7 cm"
+	      Position		      [210, 165, 240, 195]
+	      Value		      "0.07"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      Ports		      [2, 1]
+	      Position		      [380, 92, 410, 123]
+	      ShowName		      off
+	      Operator		      "OR"
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      Position		      [305, 47, 335, 78]
+	      ShowName		      off
+	      Operator		      "<="
+	      	      
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator1"
+	      Position		      [305, 137, 335, 168]
+	      ShowName		      off
+	      Operator		      ">="
+	      	      
+	    }
+	    Block {
+	      BlockType		      Stop
+	      Name		      "Stop Simulation"
+	      Position		      [445, 92, 480, 128]
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator1"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, -40]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Stop Simulation"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "z"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		Points			[0, 85; 95, 0; 0, 20]
+		DstBlock		"Relational\nOperator1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[95, 0; 0, 15]
+		DstBlock		"Relational\nOperator"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Fine corsa 7 cm"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -20]
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Fine corsa 0 cm"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -15]
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, 35]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [765, 202, 810, 248]
+	  ShowName		  off
+	  Gain			  "1/ms"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [620, 70, 675, 120]
+	  ShowName		  off
+	  Gain			  "Ktrasdc"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "Vtrasdc"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [845, 210, 875, 240]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  Ports			  [1, 1]
+	  Position		  [915, 210, 945, 240]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "z0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	  Port {
+	    PortNumber		    1
+	    Name		    "z"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Magnete"
+	  Ports			  [2, 1]
+	  Position		  [615, 198, 665, 247]
+	  ShowPortLabels	  on
+	  Permissions		  "ReadWrite"
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  SimViewingDevice	  off
+	  System {
+	    Name		    "Magnete"
+	    Location		    [187, 164, 999, 559]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Im"
+	      Position		      [250, 93, 280, 107]
+	      Port		      "1"
+	      PortDimensions	      "-1"
+	      SampleTime	      "-1"
+	      DataType		      "auto"
+	      SignalType	      "auto"
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "z"
+	      Position		      [180, 168, 210, 182]
+	      Port		      "2"
+	      PortDimensions	      "-1"
+	      SampleTime	      "-1"
+	      DataType		      "auto"
+	      SignalType	      "auto"
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [255, 225, 295, 255]
+	      Orientation	      "up"
+	      NamePlacement	      "alternate"
+	      ShowName		      off
+	      Value		      "zcomp"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      Position		      [515, 116, 585, 154]
+	      ShowName		      off
+	      Gain		      "Km2"
+	      Multiplication	      "Element-wise(K.*u)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Math
+	      Name		      "Math\nFunction"
+	      Ports		      [1, 1]
+	      Position		      [450, 120, 480, 150]
+	      ShowName		      off
+	      Operator		      "square"
+	      OutputSignalType	      "auto"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      Ports		      [2, 1]
+	      Position		      [375, 114, 400, 156]
+	      ShowName		      off
+	      Inputs		      "*/"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	      Port {
+		PortNumber		1
+		Name			"Im/z"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      Ports		      [2, 1]
+	      Position		      [265, 165, 285, 185]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Fm"
+	      Position		      [605, 128, 635, 142]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      Name		      "Im/z"
+	      Labels		      [1, 0]
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "Math\nFunction"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      Points		      [45, 0; 0, -30]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "z"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Fm"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Math\nFunction"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Im"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, 25]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Quantizer
+	  Name			  "Quantizer1"
+	  Position		  [1165, 210, 1195, 240]
+	  QuantizationInterval	  "5e-3"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Quantizer
+	  Name			  "Quantizer3"
+	  Position		  [210, 210, 240, 240]
+	  QuantizationInterval	  "5e-3"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [705, 215, 725, 235]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "+-|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [275, 215, 295, 235]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "++|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Trasduttore di\nposizione"
+	  Ports			  [1, 1]
+	  Position		  [1005, 201, 1060, 249]
+	  ShowPortLabels	  on
+	  Permissions		  "ReadWrite"
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  SimViewingDevice	  off
+	  Port {
+	    PortNumber		    1
+	    Name		    "Vtrasdp"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	  System {
+	    Name		    "Trasduttore di\nposizione"
+	    Location		    [167, 173, 979, 568]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "z"
+	      Position		      [135, 43, 165, 57]
+	      Port		      "1"
+	      PortDimensions	      "-1"
+	      SampleTime	      "-1"
+	      DataType		      "auto"
+	      SignalType	      "auto"
+	      Interpolate	      on
+	      Port {
+		PortNumber		1
+		Name			"z"
+		PropagatedSignals	"z"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+	      }
+	    }
+	    Block {
+	      BlockType		      Lookup
+	      Name		      "Caratteristica\nposizione-tensione"
+	      Position		      [220, 24, 270, 76]
+	      InputValues	      "flipud(z_ctp)"
+	      OutputValues	      "flipud(Vtrasdp_ctp)"
+	      Port {
+		PortNumber		1
+		Name			"Vtrasdp"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+	      }
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      Position		      [215, 140, 275, 170]
+	      Expr		      "(hp*(u-zp)/((u-zp)^4+bp^4)^(1/4))+cp"
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      Position		      [355, 40, 375, 60]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Vtrasdp"
+	      Position		      [355, 148, 385, 162]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      Name		      "Vtrasdp"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Caratteristica\nposizione-tensione"
+	      SrcPort		      1
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Vtrasdp"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "z"
+	      SrcBlock		      "z"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		Points			[0, 105]
+		DstBlock		"Fcn"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[1, 0]
+		DstBlock		"Caratteristica\nposizione-tensione"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "z"
+	  Position		  [1070, 23, 1100, 37]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vtrasdc"
+	  Position		  [795, 88, 825, 102]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Im"
+	  Position		  [575, 138, 605, 152]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vtrasdp"
+	  Position		  [1220, 218, 1250, 232]
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "dz"
+	  Position		  [915, 128, 945, 142]
+	  Port			  "5"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Vcon"
+	  SrcPort		  1
+	  DstBlock		  "Quantizer3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Quantizer3"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Quantizer1"
+	  SrcPort		  1
+	  DstBlock		  "Vtrasdp"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Magnete"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Vtrasdp"
+	  Labels		  [0, 1; 1, 1]
+	  SrcBlock		  "Trasduttore di\nposizione"
+	  SrcPort		  1
+	  DstBlock		  "Quantizer1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ampli PWM"
+	  SrcPort		  1
+	  Points		  [65, 0]
+	  Branch {
+	    Points		    [0, -65; 0, 0]
+	    Branch {
+	      DstBlock		      "Im"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -50]
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Labels		    [1, 0]
+	    DstBlock		    "Magnete"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Ampli PWM"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Vtrasdc"
+	  Labels		  [0, 1]
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  Points		  [0, 0; 80, 0]
+	  Branch {
+	    DstBlock		    "Vtrasdc"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -55; -435, 0; 0, 155]
+	    DstBlock		    "Ampli PWM"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "z"
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, -135]
+	    Branch {
+	      Points		      [0, -60]
+	      DstBlock		      "z"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Fine corsa meccanici"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 85; -390, 0; 0, -75]
+	    DstBlock		    "Magnete"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Labels		    [1, 0]
+	    DstBlock		    "Trasduttore di\nposizione"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    Points		    [0, -90]
+	    DstBlock		    "dz"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Integrator1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [2, 1]
+      Position		      [575, 376, 580, 414]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Parametri\nlevitatore"
+      Ports		      []
+      Position		      [39, 143, 75, 182]
+      OpenFcn		      "levitatore_m2"
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      System {
+	Name			"Parametri\nlevitatore"
+	Location		[433, 403, 931, 703]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      Quantizer
+      Name		      "Quantizer3"
+      Position		      [100, 260, 130, 290]
+      BackgroundColor	      "cyan"
+      QuantizationInterval    "5e-3"
+      LinearizeAsGain	      on
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Signal\nGenerator"
+      Position		      [45, 260, 75, 290]
+      WaveForm		      "sawtooth"
+      Amplitude		      "-1"
+      Frequency		      ".5"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [175, 265, 195, 285]
+      BackgroundColor	      "cyan"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Vcon"
+      Ports		      [1]
+      Position		      [400, 189, 430, 221]
+      Floating		      off
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Vrif  Vtrasdp"
+      Ports		      [1]
+      Position		      [630, 379, 660, 411]
+      Floating		      off
+      Location		      [5, 53, 1029, 743]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "10"
+      YMin		      "-2.5"
+      YMax		      "1.25"
+      SaveToWorkspace	      on
+      SaveName		      "ScopeData2"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Vtrasdc"
+      Ports		      [1]
+      Position		      [540, 214, 570, 246]
+      Floating		      off
+      Location		      [83, 487, 407, 726]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "z"
+      Ports		      [1]
+      Position		      [480, 209, 510, 241]
+      Floating		      off
+      Location		      [5, 53, 1029, 743]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "10"
+      YMin		      "-0.3"
+      YMax		      "0.2"
+      SaveToWorkspace	      on
+      SaveName		      "ScopeData4"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Line {
+      Name		      "Vcon"
+      Labels		      [0, 1]
+      SrcBlock		      "Discrete\nTransfer Fcn"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	Points			[0, -70]
+	DstBlock		"Vcon"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Mod 2 app"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Discrete\nTransfer Fcn"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Signal\nGenerator"
+      SrcPort		      1
+      DstBlock		      "Quantizer3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Vrif  Vtrasdp"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mod 2 app"
+      SrcPort		      2
+      Points		      [90, 0]
+      DstBlock		      "Vtrasdc"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mod 2 app"
+      SrcPort		      3
+      DstBlock		      "Im"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Vtrasdp"
+      Labels		      [0, 1]
+      SrcBlock		      "Mod 2 app"
+      SrcPort		      4
+      Points		      [105, 0; 0, 85]
+      Branch {
+	Points			[20, 0]
+	DstBlock		"Mux"
+	DstPort			1
+      }
+      Branch {
+	Points			[-355, 0]
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Quantizer3"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	DstBlock		"Sum2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 130]
+	DstBlock		"Mux"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Mod 2 app"
+      SrcPort		      1
+      Points		      [25, 0; 0, -30]
+      DstBlock		      "z"
+      DstPort		      1
+    }
+    Annotation {
+      Text		      "LEVITATORE MAGNETICO: MODELLO DI SECONDA APPROS"
+"SIMAZIONE\nCON COMPENSATORE DIGITALE AD 1 GDL"
+      Position		      [429, 46]
+      DropShadow	      on
+      FontSize		      20
+    }
+    Annotation {
+      Text		      "Prima di simulare caricare i parametri del mode"
+"llo\ne definire un compensatore (doppio click sul blocchi sottostanti)"
+      Position		      [199, 105]
+      BackgroundColor	      "cyan"
+    }
+  }
+}
